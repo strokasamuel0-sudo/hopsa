@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Optimalizácia -->
+  <title>HOPSA MARKETING | Tvorba videí, strih a obsah pre sociálne siete na Orave</title>
+  <meta name="description" content="Kreatívne video & content štúdio na Orave. Tvorba reklamných videí, strih materiálov z telefónu, foto, grafika a správa sociálnych sietí bez zbytočných komplikácií." />
+  <meta name="keywords" content="tvorba videí Orava, strih videí Orava, reels Orava, sociálne siete Orava, marketing Orava, reklamné videá, foto a grafika" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HOPSA MARKETING | Marketing, ktorý je vidieť." />
+  <meta property="og:description" content="Videá, sociálne siete a kreatívny obsah pre firmy, ktoré chcú byť vidieť." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hopsa: {
+              DEFAULT: '#ff5722',      /* Hrejivá koralová / Papaya */
+              hover: '#f44336',
+              light: '#fff1ec',
+              subtle: '#ffe2d8',
+            },
+            canvas: '#fbfbfa',          /* Teplý ateliérový podklad */
+            surface: '#ffffff',
+            ink: {
+              DEFAULT: '#111113',      /* Hlboký grafit */
+              muted: '#5e5e66',
+              subtle: '#94949f',
+              border: '#e8e8e4',
+            }
+          },
+          fontFamily: {
+            heading: ['Syne', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 8px 30px -4px rgba(17, 17, 19, 0.04), 0 4px 12px -2px rgba(17, 17, 19, 0.02)',
+            'card': '0 20px 40px -15px rgba(17, 17, 19, 0.06)',
+            'float': '0 25px 50px -12px rgba(255, 87, 34, 0.22)',
+          },
+          animation: {
+            'marquee': 'marquee 28s linear infinite',
+            'marquee-reverse': 'marquee-reverse 28s linear infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            'marquee-reverse': {
+              '0%': { transform: 'translateX(-50%)' },
+              '100%': { transform: 'translateX(0%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    ::selection {
+      background-color: #ffe2d8;
+      color: #ff5722;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  \n</style>
+
+  <!-- JSON-LD pre Lokálne SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "HOPSA MARKETING",
+    "description": "Kreatívne video & content štúdio. Strih videí, tvorba Reels, sociálne siete a grafika pre firmy na Orave.",
+    "areaServed": ["Orava", "Námestovo", "Tvrdošín", "Dolný Kubín", "Žilina"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Orava",
+      "addressCountry": "SK"
+    }
+  }
+  </script>
+
+<style>
+.price-badge strong{font-size:14px}
+}
+</style>
+
+<style>
+.price-badge{
+  display:inline-flex;align-items:center;gap:12px;
+  margin:20px 0 4px;padding:12px 18px;
+  border:1px solid rgba(255,86,45,.28);
+  background:rgba(255,246,242,.92);
+  border-radius:999px;
+  box-shadow:0 8px 30px rgba(17,17,17,.06);
+  font-size:12px;font-weight:700;letter-spacing:.04em;
+}
+.price-badge strong{font-size:16px;letter-spacing:0;color:var(--hopsa,#ff572f)}
+.price-badge-dot{
+  width:8px;height:8px;border-radius:50%;background:var(--hopsa,#ff572f);
+  display:block;
+}
+@media(max-width:640px){
+  .price-badge{gap:9px;padding:10px 14px;font-size:11px}
+  .price-badge strong{font-size:15px}
+}
+</style>
+</head>
+
+<body class="bg-canvas text-ink font-sans antialiased selection:bg-hopsa-subtle selection:text-hopsa overflow-x-hidden relative">
+
+  <!-- Jemné organické podkreslenie -->
+  <div class="fixed top-[-10%] right-[-5%] w-[500px] h-[500px] bg-hopsa-light rounded-full blur-[140px] pointer-events-none -z-10 opacity-70"></div>
+  <div class="fixed bottom-[15%] left-[-8%] w-[550px] h-[550px] bg-[#f3ede6] rounded-full blur-[150px] pointer-events-none -z-10 opacity-80"></div>
+
+  <!-- ==================== HLAVIČKA (NAVBAR) ==================== -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-canvas/85 border-b border-ink-border/60 transition-all">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Typografické logo HOPSA -->
+      <a href="#" class="group flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-hopsa group-hover:scale-125 transition-transform duration-300"></span>
+        <div class="flex flex-col leading-none">
+          <span class="font-heading font-black text-2xl tracking-tighter text-ink">HOPSA</span>
+          <span class="text-[9px] font-bold tracking-[0.28em] text-ink-muted uppercase">MARKETING</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigácia -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-ink-muted">
+        <a href="#sluzby" class="hover:text-ink transition-colors">Služby</a>
+        <a href="#kamera" class="hover:text-ink transition-colors">Mobil stačí</a>
+        <a href="#formaty" class="hover:text-ink transition-colors">Čo vytvoríme</a>
+        <a href="#pre-koho" class="hover:text-ink transition-colors">Pre koho</a>
+        <a href="#na-mieru" class="hover:text-ink transition-colors">Neviete čo potrebujete?</a>
+      </nav>
+
+      <!-- CTA Tlačidlo -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#kontakt" class="px-6 py-2.5 rounded-full bg-ink text-surface font-semibold text-sm hover:bg-hopsa transition-all duration-300 shadow-soft hover:shadow-float active:scale-95">
+          Nezáväzne sa ozvať
+        </a>
+      </div>
+
+      <!-- Mobilný Hamburger -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-ink rounded-lg focus:outline-none" aria-label="Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobilné menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-b border-ink-border px-6 py-6 space-y-4 shadow-card">
+      <a href="#sluzby" class="mobile-link block text-lg font-medium text-ink">Služby</a>
+      <a href="#kamera" class="mobile-link block text-lg font-medium text-ink">Mobil stačí</a>
+      <a href="#formaty" class="mobile-link block text-lg font-medium text-ink">Čo vieme vytvoriť</a>
+      <a href="#pre-koho" class="mobile-link block text-lg font-medium text-ink">Pre koho</a>
+      <a href="#na-mieru" class="mobile-link block text-lg font-medium text-ink">Neviete čo potrebujete?</a>
+      <a href="#kontakt" class="mobile-link block w-full text-center py-3.5 rounded-2xl bg-hopsa text-surface font-bold">
+        Chcem marketing
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SEKCIA ==================== -->
+  
+
+  <!-- ==================== SEKCIÁ SLUŽIEB (6 KARIET) ==================== -->
+  <section id="sluzby" class="py-24 px-6 border-t border-ink-border/70 relative">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-hopsa block mb-2">Čo pre vás robíme</span>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black tracking-tight text-ink uppercase">
+            NAŠE SLUŽBY
+          </h2>
+        </div>
+        <p class="text-ink-muted text-sm sm:text-base max-w-md mt-4 md:mt-0 leading-relaxed">
+          Kreatívny obsah od jednoduchého zostrihu videa až po ucelenú vizuálnu identitu na sociálnych sieťach.
+        </p>
+      </div>
+
+      <!-- 6 Kariet -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 1. VIDEÁ -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border hover:border-hopsa/50 transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="video" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">VIDEÁ</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Od profesionálneho reklamného spotu až po Reel natočený telefónom.“
+            </p>
+            <ul class="space-y-2 text-xs text-ink-muted mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Reklamné & promo videá</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Reels & krátke dynamické videá</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Produktové videá a zábery z prevádzky</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Profesionálne natáčanie na mieste</li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Chcem videá <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- 2. STRIH VIDEÍ (Kľúčová služba) -->
+        <div class="p-8 rounded-3xl bg-surface border-2 border-hopsa/30 hover:border-hopsa transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-hopsa-light text-hopsa px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase">
+            Obľúbené
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-hopsa/10 border border-hopsa/30 flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="scissors" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">STRIH VIDEÍ</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Vy natočíte. My z toho spravíme obsah, ktorý chcete ukázať.“
+            </p>
+            <ul class="space-y-2 text-xs text-ink-muted mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Výber najlepších momentov z mobilu</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Chytľavé slovenské titulky</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Výber hudby & zvukové efekty</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Úprava formátu pre IG, FB a TikTok</li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Chcem zostrihať video <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- 3. SOCIÁLNE SIETE -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border hover:border-hopsa/50 transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="smartphone" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">SOCIÁLNE SIETE</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Obsah, ktorý nemusíte každý deň vymýšľať sami.“
+            </p>
+            <ul class="space-y-2 text-xs text-ink-muted mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Správa Instagramu & Facebooku</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Tvorba Reels a pútavých Stories</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Plánovanie a publikovanie príspevkov</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Copywriting a texty k postom</li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Riešiť siete <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- 4. FOTO & GRAFIKA -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border hover:border-hopsa/50 transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="camera" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">FOTO & GRAFIKA</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Vizuály pre váš Instagram, web aj každodennú komunikáciu.“
+            </p>
+            <ul class="space-y-2 text-xs text-ink-muted mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Fotografie prevádzok a priestorov</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Produktové fotky s atmosférou</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Grafika pre sociálne siete a bannery</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-hopsa"></i> Letáky a online vizuály</li>
+            </ul>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Chcem vizuály <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- 5. REKLAMNÝ OBSAH (Nahradilo nastavovanie reklám) -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border hover:border-hopsa/50 transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">REKLAMNÝ OBSAH</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Videá a vizuály pripravené na propagáciu vašej firmy.“
+            </p>
+            <p class="text-xs text-ink-muted leading-relaxed mb-6">
+              Nenastavujeme reklamné kampane v systémoch – dodávame vám kreatívny obsah s vysokým konverzným potenciálom, ktorý môžete vy sami použiť na sieťach, webe alebo vo svojej platenej reklame.
+            </p>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Vytvoriť obsah <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- 6. AI OBSAH (Doplnkový nástroj) -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border hover:border-hopsa/50 transition-all duration-300 shadow-soft hover:shadow-card flex flex-col justify-between group">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-hopsa mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black tracking-tight text-ink mb-2">AI OBSAH</h3>
+            <p class="text-ink font-semibold text-sm mb-4">
+              „Kreatívne možnosti, ktoré otvára moderná technológia.“
+            </p>
+            <p class="text-xs text-ink-muted leading-relaxed mb-6">
+              Keď realita nestačí, využijeme AI. Tvoríme kreatívne vizuály, animácie a koncepty, ktoré by bolo klasickou štúdiovou produkciou náročné alebo drahé vytvoriť. Doplnok v našom kreatívnom toolboxe.
+            </p>
+          </div>
+          <a href="#kontakt" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-hopsa group-hover:translate-x-1 transition-transform">
+            Zistiť možnosti <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== VÝRAZNÁ SEKCIÁ: NEMÁTE KAMERAMANA? NEVADÍ ==================== -->
+  <section id="kamera" class="py-24 px-6 bg-[#f4f2ee] border-y border-ink-border relative overflow-hidden">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="px-4 py-1.5 rounded-full bg-surface border border-ink-border text-xs font-bold uppercase tracking-widest text-hopsa inline-block mb-4 shadow-soft">
+          Bez drahých štúdií
+        </span>
+        <h2 class="text-4xl sm:text-6xl font-heading font-black tracking-tight uppercase leading-tight text-ink mb-6">
+          Nemáte kameramana? <br />
+          <span class="text-hopsa">Nevadí.</span>
+        </h2>
+        <p class="text-ink text-lg sm:text-xl font-medium leading-relaxed mb-3">
+          Nemusíte mať drahú techniku ani vedieť strihať. <br />
+          <span class="font-bold underline decoration-hopsa decoration-2">Stačí telefón.</span>
+        </p>
+        <p class="text-ink-muted text-sm sm:text-base leading-relaxed">
+          Natočíte nám svoju prácu, prevádzku, produkt alebo zákazku. Pošlete nám materiál a my z neho vytvoríme profesionálny obsah.
+        </p>
+      </div>
+
+      <!-- Vizuálny flow: VY 📱 → HOPSA ✂️ → HOTOVÝ OBSAH -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        
+        <!-- 1. VY -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border shadow-soft flex flex-col items-center text-center">
+          <div class="w-16 h-16 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-2xl mb-4">
+            📱
+          </div>
+          <span class="text-xs font-mono font-bold text-hopsa uppercase tracking-wider mb-1">01 / VY</span>
+          <h4 class="font-heading font-black text-xl text-ink mb-2">Natočíte telefónom</h4>
+          <p class="text-xs text-ink-muted leading-relaxed">
+            Spravíte 3–4 autentické zábery priamo pri práci, tak ako ste zvyknutí. Žiadna pretvárka.
+          </p>
+        </div>
+
+        <!-- 2. HOPSA (Stredobod) -->
+        <div class="p-8 rounded-3xl bg-hopsa text-surface shadow-float flex flex-col items-center text-center md:scale-105 z-10 transition-transform">
+          <div class="w-16 h-16 rounded-2xl bg-surface/20 backdrop-blur-md flex items-center justify-center text-2xl mb-4">
+            ✂️
+          </div>
+          <span class="text-xs font-mono font-bold text-surface/80 uppercase tracking-wider mb-1">02 / HOPSA</span>
+          <h4 class="font-heading font-black text-2xl text-surface mb-2">My to zostriháme</h4>
+          <p class="text-xs text-surface/90 leading-relaxed font-medium">
+            Vyberieme najlepšie sekundy, dodáme dynamický rytmus, vyčistíme zvuk, pridáme slovenské titulky a grafiku.
+          </p>
+        </div>
+
+        <!-- 3. HOTOVÝ OBSAH -->
+        <div class="p-8 rounded-3xl bg-surface border border-ink-border shadow-soft flex flex-col items-center text-center">
+          <div class="w-16 h-16 rounded-2xl bg-canvas border border-ink-border flex items-center justify-center text-2xl mb-4">
+            ✨
+          </div>
+          <span class="text-xs font-mono font-bold text-hopsa uppercase tracking-wider mb-1">03 / VÝSLEDOK</span>
+          <h4 class="font-heading font-black text-xl text-ink mb-2">Hotový obsah</h4>
+          <p class="text-xs text-ink-muted leading-relaxed">
+            Dostanete video vo formáte 9:16, ktoré môžete rovno publikovať a hrdo ukázať zákazníkom.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-xs font-mono text-ink-muted uppercase tracking-wider">
+          Jednoducho · Bez stresu · Obsah hotový za pár dní
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ČO VÁM VIEME VYTVORIŤ (KATALÓG FORMÁTOV) ==================== -->
+  <section id="formaty" class="py-24 px-6 border-b border-ink-border bg-canvas">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-hopsa block mb-2">Prehľad možností</span>
+        <h2 class="text-4xl sm:text-5xl font-heading font-black tracking-tight text-ink uppercase mb-4">
+          Čo vám vieme vytvoriť
+        </h2>
+        <p class="text-ink-muted text-sm leading-relaxed">
+          Zoznam kreatívnych formátov, ktoré v HOPSA navrhujeme a produkujeme. Žiadne vymyslené referencie – iba reálne zručnosti, ktoré máte k dispozícii.
+        </p>
+      </div>
+
+      <!-- Kreatívny grid formátov -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🎬</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">REELS</h4>
+          <span class="text-[11px] text-ink-muted">Krátke vertikálne videá</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">📣</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">REKLAMNÉ VIDEÁ</h4>
+          <span class="text-[11px] text-ink-muted">Pre web aj sociálne siete</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🚀</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">PROMO VIDEÁ</h4>
+          <span class="text-[11px] text-ink-muted">Predstavenie vašej značky</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">📦</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">PRODUKTOVÉ VIDEÁ</h4>
+          <span class="text-[11px] text-ink-muted">Ukážka detailov a kvality</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🏪</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">VIDEÁ Z PREVÁDZKY</h4>
+          <span class="text-[11px] text-ink-muted">Zákulisie dielne a salónu</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🎪</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">VIDEÁ Z PODUJATÍ</h4>
+          <span class="text-[11px] text-ink-muted">Aftermovie z akcií a osláv</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">📲</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">STORIES</h4>
+          <span class="text-[11px] text-ink-muted">Denný kontakt s publikom</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">📷</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">FOTOGRAFIE</h4>
+          <span class="text-[11px] text-ink-muted">Atmosférické zábery priestorov</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🎨</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">GRAFIKA</h4>
+          <span class="text-[11px] text-ink-muted">Posty a vizuálne šablóny</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center">
+          <div class="text-2xl mb-2">🖼️</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">BANNERY</h4>
+          <span class="text-[11px] text-ink-muted">Vizuály na web a akcie</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-surface border border-ink-border hover:border-hopsa/40 transition-all shadow-soft group text-center col-span-2 sm:col-span-1 lg:col-span-2">
+          <div class="text-2xl mb-2">🤖</div>
+          <h4 class="font-heading font-black text-sm text-ink group-hover:text-hopsa transition-colors">AI OBSAH</h4>
+          <span class="text-[11px] text-ink-muted">Animácie a doplnkové vizuály</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PRE KOHO SME (KINETICKÝ TICKER) ==================== -->
+  <section id="pre-koho" class="py-24 overflow-hidden border-b border-ink-border bg-canvas">
+    <div class="max-w-5xl mx-auto px-6 text-center mb-16">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-hopsa block mb-3">Pre koho sme</span>
+      <h2 class="text-4xl sm:text-6xl font-heading font-black tracking-tight text-ink uppercase leading-tight mb-6">
+        „Nemusíte byť veľká firma, <br class="hidden sm:inline" />
+        <span class="text-ink-muted font-normal">aby ste vyzerali veľko.“</span>
+      </h2>
+      <p class="text-ink-muted text-sm sm:text-base max-w-xl mx-auto">
+        Pracujeme s lokálnymi podnikateľmi na Orave a v okolí, ktorí potrebujú kvalitný vizuálny výstup bez zbytočných agentúrnych poplatkov.
+      </p>
+    </div>
+
+    <!-- Nekonečný Ticker -->
+    <div class="relative w-full overflow-hidden select-none py-2 space-y-4">
+      <div class="flex whitespace-nowrap animate-marquee">
+        <div class="flex items-center gap-4 text-3xl sm:text-5xl font-heading font-black uppercase text-ink tracking-tight px-2">
+          <span>REŠTAURÁCIE</span> <span class="text-hopsa">·</span>
+          <span>AUTOSERVISY</span> <span class="text-hopsa">·</span>
+          <span>UBYTOVANIE</span> <span class="text-hopsa">·</span>
+          <span>REMESLÁ</span> <span class="text-hopsa">·</span>
+          <span>E-SHOPY</span> <span class="text-hopsa">·</span>
+          <span>PREVÁDZKY</span> <span class="text-hopsa">·</span>
+          <span>MALÉ FIRMY</span> <span class="text-hopsa">·</span>
+          <span>PODNIKATELIA</span> <span class="text-hopsa">·</span>
+        </div>
+        <div class="flex items-center gap-4 text-3xl sm:text-5xl font-heading font-black uppercase text-ink tracking-tight px-2">
+          <span>REŠTAURÁCIE</span> <span class="text-hopsa">·</span>
+          <span>AUTOSERVISY</span> <span class="text-hopsa">·</span>
+          <span>UBYTOVANIE</span> <span class="text-hopsa">·</span>
+          <span>REMESLÁ</span> <span class="text-hopsa">·</span>
+          <span>E-SHOPY</span> <span class="text-hopsa">·</span>
+          <span>PREVÁDZKY</span> <span class="text-hopsa">·</span>
+          <span>MALÉ FIRMY</span> <span class="text-hopsa">·</span>
+          <span>PODNIKATELIA</span> <span class="text-hopsa">·</span>
+        </div>
+      </div>
+
+      <div class="flex whitespace-nowrap animate-marquee-reverse">
+        <div class="flex items-center gap-4 text-3xl sm:text-5xl font-heading font-bold uppercase text-ink-subtle/50 tracking-tight px-2">
+          <span>KAVIARNE</span> <span class="text-hopsa/40">·</span>
+          <span>STOLÁRI</span> <span class="text-hopsa/40">·</span>
+          <span>FITNESS</span> <span class="text-hopsa/40">·</span>
+          <span>SALÓNY</span> <span class="text-hopsa/40">·</span>
+          <span>STAVEBNÍCTVO</span> <span class="text-hopsa/40">·</span>
+          <span>LOKÁLNI TVORCOVIA</span> <span class="text-hopsa/40">·</span>
+        </div>
+        <div class="flex items-center gap-4 text-3xl sm:text-5xl font-heading font-bold uppercase text-ink-subtle/50 tracking-tight px-2">
+          <span>KAVIARNE</span> <span class="text-hopsa/40">·</span>
+          <span>STOLÁRI</span> <span class="text-hopsa/40">·</span>
+          <span>FITNESS</span> <span class="text-hopsa/40">·</span>
+          <span>SALÓNY</span> <span class="text-hopsa/40">·</span>
+          <span>STAVEBNÍCTVO</span> <span class="text-hopsa/40">·</span>
+          <span>LOKÁLNI TVORCOVIA</span> <span class="text-hopsa/40">·</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEKCIÁ: NEVIETE PRESNE, ČO POTREBUJETE? ==================== -->
+  <section id="na-mieru" class="py-24 px-6 bg-[#f4f2ee] border-b border-ink-border relative">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="p-8 sm:p-14 rounded-3xl bg-surface border border-ink-border shadow-card relative overflow-hidden">
+        
+        <div class="w-14 h-14 rounded-2xl bg-hopsa/10 border border-hopsa/20 text-hopsa flex items-center justify-center mx-auto mb-6 text-2xl">
+          💡
+        </div>
+
+        <h3 class="text-3xl sm:text-5xl font-heading font-black tracking-tight text-ink uppercase mb-6 leading-tight">
+          Neviete presne, čo potrebujete?
+        </h3>
+        
+        <div class="space-y-4 text-ink-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+          <p class="text-ink font-medium">
+            Nemusíte prísť s hotovým nápadom.
+          </p>
+          <p>
+            Povedzte nám, čo robíte, čo predávate alebo čo chcete ľuďom ukázať. Vymyslíme spôsob, ako to dostať do videa, fotografie alebo sociálneho obsahu.
+          </p>
+        </div>
+
+        <a href="#kontakt" class="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-hopsa text-surface font-heading font-bold text-base hover:bg-hopsa-hover transition-all duration-300 shadow-soft hover:shadow-float active:scale-95">
+          <span>Poďme niečo vymyslieť</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== O HOPSA ==================== -->
+  <section id="o-nas" class="py-24 px-6 relative">
+    <div class="max-w-4xl mx-auto">
+      <div class="p-8 sm:p-12 rounded-3xl bg-surface border border-ink-border shadow-card relative">
+        
+        <span class="text-xs font-mono uppercase tracking-wider text-hopsa font-bold block mb-4">// O ZNAČKE</span>
+        
+        <h3 class="text-3xl sm:text-4xl font-heading font-black tracking-tight text-ink uppercase mb-6 leading-tight">
+          HOPSA MARKETING
+        </h3>
+        
+        <div class="space-y-4 text-ink-muted text-base sm:text-lg leading-relaxed">
+          <p class="text-ink font-medium">
+            HOPSA vznikla s jednoduchou myšlienkou – marketing nemusí byť komplikovaný.
+          </p>
+          <p>
+            Chceme pomáhať firmám ukázať ľuďom, čo robia, prečo to robia a prečo si ich majú vybrať. Sme malé a flexibilné video & content štúdio z Oravy. Žiadna nafúknutá agentúra, ale partneri, ktorým záleží na tom, aby váš profil konečne vyzeral dobre.
+          </p>
+          <p class="font-semibold text-ink">
+            Od obyčajného videa z telefónu až po kompletný kreatívny obsah na sociálne siete.
+          </p>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-ink-border/80 flex flex-wrap items-center justify-between gap-4 text-xs font-medium text-ink-muted">
+          <div>
+            Pôsobenie: <span class="text-ink font-bold">Orava & okolie</span>
+          </div>
+          <a href="#kontakt" class="text-hopsa font-bold uppercase tracking-wider flex items-center gap-1 hover:underline">
+            Nezáväzne sa ozvať <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VEĽKÁ CTA SEKCIa ==================== -->
+  <section class="py-24 px-6 bg-ink text-surface text-center relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-hopsa/20 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10">
+      <span class="text-xs font-mono uppercase tracking-[0.25em] text-hopsa block mb-4 font-bold">Máte firmu?</span>
+      
+      <h2 class="text-5xl sm:text-7xl lg:text-8xl font-heading font-black tracking-tight uppercase leading-[0.98] mb-8 text-balance">
+        HOPSA, <br />
+        poďme ju ukázať.
+      </h2>
+      
+      <div class="flex flex-col items-center">
+        <a href="#kontakt" class="px-10 py-5 rounded-2xl bg-hopsa text-surface font-heading font-black text-lg tracking-wide uppercase hover:scale-105 hover:bg-hopsa-hover transition-all duration-300 shadow-float active:scale-95">
+          Ozvať sa
+        </a>
+        <span class="mt-4 text-xs font-medium uppercase tracking-wider text-surface/60">
+          Nezáväzná konzultácia zdarma
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KONTAKT A FORMULÁR ==================== -->
+  <section id="kontakt" class="py-24 px-6 bg-canvas border-t border-ink-border">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        
+        <!-- Info stĺpec -->
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-hopsa block mb-2">Kontakt</span>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black tracking-tight text-ink uppercase mb-6">
+            Nezáväzne sa ozvať
+          </h2>
+          <p class="text-ink-muted text-base leading-relaxed mb-10">
+            Každý klient dostáva ponuku individuálne podľa svojich potrieb a rozsahu práce. Nenútime vám pevné balíčky, ktoré nepotrebujete.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-surface border border-ink-border flex items-center justify-center text-hopsa shadow-soft">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-ink-subtle uppercase tracking-wider font-mono">E-mail</div>
+                <a href="mailto:hopsa.production@gmail.com" class="text-base font-bold text-ink hover:text-hopsa transition-colors">hopsa.production@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-surface border border-ink-border flex items-center justify-center text-hopsa shadow-soft">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-ink-subtle uppercase tracking-wider font-mono">Instagram</div>
+                <a href="https://instagram.com/hopsa.production" target="_blank" rel="noreferrer" class="text-base font-bold text-ink hover:text-hopsa transition-colors">@hopsa.production</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-surface border border-ink-border flex items-center justify-center text-hopsa shadow-soft">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-ink-subtle uppercase tracking-wider font-mono">Telefón</div>
+                <a href="tel:+421949098880" class="text-base font-bold text-ink hover:text-hopsa transition-colors">+421 949 098 880</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-surface border border-ink-border flex items-center justify-center text-hopsa shadow-soft">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-ink-subtle uppercase tracking-wider font-mono">Lokalita</div>
+                <span class="text-base font-bold text-ink">Celá Orava (Námestovo, Tvrdošín, Dolný Kubín a okolie)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulár -->
+        <div class="bg-surface border border-ink-border p-8 sm:p-10 rounded-3xl shadow-card relative">
+          
+          <div id="formSuccessMessage" class="hidden text-center py-12">
+            <div class="w-16 h-16 bg-hopsa-light text-hopsa rounded-full flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="check" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-black mb-2 text-ink">Správa bola odoslaná!</h3>
+            <p class="text-ink-muted text-sm">
+              Čoskoro sa vám ozveme späť a spoločne niečo vymyslíme.
+            </p>
+          </div>
+
+          <form id="contactForm" class="space-y-4">
+            <div>
+              <label class="block text-xs font-mono uppercase text-ink-muted mb-2 font-semibold">Meno *</label>
+              <input 
+                type="text" 
+                required 
+                placeholder="Vaše meno" 
+                class="w-full px-4 py-3.5 rounded-xl bg-canvas border border-ink-border text-ink placeholder-ink-subtle focus:outline-none focus:border-hopsa focus:bg-surface transition-all text-sm"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono uppercase text-ink-muted mb-2 font-semibold">Firma / Prevádzka</label>
+                <input 
+                  type="text" 
+                  placeholder="Názov vašej firmy" 
+                  class="w-full px-4 py-3.5 rounded-xl bg-canvas border border-ink-border text-ink placeholder-ink-subtle focus:outline-none focus:border-hopsa focus:bg-surface transition-all text-sm"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-mono uppercase text-ink-muted mb-2 font-semibold">Telefón *</label>
+                <input 
+                  type="tel" 
+                  required 
+                  placeholder="+421 900 000 000" 
+                  class="w-full px-4 py-3.5 rounded-xl bg-canvas border border-ink-border text-ink placeholder-ink-subtle focus:outline-none focus:border-hopsa focus:bg-surface transition-all text-sm"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-ink-muted mb-2 font-semibold">E-mail *</label>
+              <input 
+                type="email" 
+                required 
+                placeholder="vas@email.sk" 
+                class="w-full px-4 py-3.5 rounded-xl bg-canvas border border-ink-border text-ink placeholder-ink-subtle focus:outline-none focus:border-hopsa focus:bg-surface transition-all text-sm"
+              />
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono uppercase text-ink-muted mb-2 font-semibold">Čo potrebujete?</label>
+              <textarea 
+                rows="4" 
+                placeholder="Napr. máme zábery v mobile a potrebujeme z nich Reels, postarať sa o Instagram alebo nafotiť prevádzku..." 
+                class="w-full px-4 py-3.5 rounded-xl bg-canvas border border-ink-border text-ink placeholder-ink-subtle focus:outline-none focus:border-hopsa focus:bg-surface transition-all text-sm resize-none"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full py-4 rounded-xl bg-hopsa text-surface font-heading font-black uppercase text-sm tracking-wider hover:bg-hopsa-hover transition-all flex items-center justify-center gap-2 active:scale-95 shadow-soft hover:shadow-float cursor-pointer"
+            >
+              <i data-lucide="send" class="w-4 h-4"></i>
+              Odoslať dopyt
+            </button>
+            <p class="text-[11px] text-ink-subtle text-center mt-2">
+              Žiadny spam. Odpovedáme rýchlo a priamo k veci.
+            </p>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PÄTIČKA (FOOTER) ==================== -->
+  <footer class="py-12 px-6 border-t border-ink-border bg-surface text-ink-muted text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <div class="flex items-center gap-3">
+        <span class="font-heading font-black text-ink text-base tracking-tight">HOPSA MARKETING</span>
+        <span class="text-ink-border">|</span>
+        <span>Video & Content štúdio Orava</span>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-ink-muted font-medium">
+        <span>Tvorba videí</span>
+        <span>Strih záberov z telefónu</span>
+        <span>Sociálne siete</span>
+        <span>Foto a grafika</span>
+      </div>
+
+      <div>
+        © 2026 HOPSA MARKETING. Všetky práva vyhradené.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== SKRIPTY ==================== -->
+  <script>
+    // Inicializácia ikoniek Lucide
+    lucide.createIcons();
+
+    // Mobilné menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Kontaktný formulár
+    const contactForm = document.getElementById('contactForm');
+    const formSuccessMessage = document.getElementById('formSuccessMessage');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactForm.classList.add('hidden');
+      formSuccessMessage.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
